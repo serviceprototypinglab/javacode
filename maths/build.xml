@@ -1,0 +1,27 @@
+<project name="Maths" default="run" basedir=".">
+  <target name="init">
+    <mkdir dir="build"/>
+  </target>
+
+  <target name="compile" depends="init">
+    <javac srcdir="src" destdir="build" includeantruntime="false"/>
+  </target>
+
+  <target name="dist" depends="compile">
+    <mkdir dir="dist"/>
+    <jar jarfile="dist/maths.jar" basedir="build"/>
+  </target>
+
+  <target name="run" depends="dist">
+    <javac srcdir="." destdir="." includes="*.java" classpath="dist/maths.jar" includeantruntime="false"/>
+    <java classname="Maths" classpath="dist/maths.jar:."/>
+  </target>
+
+  <target name="clean">
+    <delete dir="build"/>
+    <delete dir="dist"/>
+    <delete>
+      <fileset dir="." includes="*.class"/>
+    </delete>
+  </target>
+</project>

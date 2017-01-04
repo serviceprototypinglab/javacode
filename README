@@ -3,12 +3,23 @@ reference code for various tasks. The projects differ by what they do,
 how they are structured, how to build them, how to test and deploy them,
 which libraries and frameworks are used and so forth.
 
+Project:       maths
+* Structure:   library + test application
+* Classes:     1
+* SLOC:        43 lines
+* Complexity:  1 constructor, 1 method, 1 main method (external)
+* Interaction: none
+* Building:    ant dist
+* Running:     ant run
+* Testing:     --
+
 Project:       transport
+* Structure:   application
 * Classes:     3
 * SLOC:        162 lines
 * Complexity:  3 constructors, 4 methods, 4 getters/setters, 1 main
                method
-* Interaction: stdout
+* Interaction: stdout, HTTP download
 * Building:    make compile
 * Running:     make run
 * Testing:     junit
