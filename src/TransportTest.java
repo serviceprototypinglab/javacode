@@ -8,11 +8,28 @@ import org.junit.runner.notification.Failure;
 public class TransportTest
 {
 	@Test
-	public void testEverything()
+	public void testStatistics()
 	{
-		int x = 1;
-		int y = 1;
-		assertEquals(x, y);
+		int x = 42;
+		TransportStatistics stats = new TransportStatistics();
+		stats.setEntries(x);
+		assertEquals(x, stats.getEntries());
+	}
+
+	@Test
+	public void testAnalysis()
+	{
+		TransportAnalysis ta = new TransportAnalysis();
+		TransportStatistics stats = null;
+		try
+		{
+			stats = ta.read(null);
+		}
+		catch(Exception e)
+		{
+			System.out.println("(expected exception)");
+		}
+		assertNull(stats);
 	}
 
 	public final static void main(String[] args)
@@ -20,8 +37,8 @@ public class TransportTest
 		Result result = JUnitCore.runClasses(TransportTest.class);
 		for (Failure failure : result.getFailures())
 		{
-			System.out.println(failure.toString());
+			System.out.println("FAIL: " + failure.toString());
 		}
-		System.out.println(result.wasSuccessful());
+		System.out.println("SUCCESS: " + result.wasSuccessful());
 	}
 }
