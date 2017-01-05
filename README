@@ -34,3 +34,14 @@ Project:       transport
 * Building:    make compile
 * Running:     make run
 * Testing:     junit
+
+Project:       imageprocessor
+* Structure:   applications + plugins
+* Classes:     6
+* SLOC:        253 lines
+* Complexity:  1 interface, 2 constructors, 7 methods, 3*3 methods in
+               plugins, 1 main method
+* Interaction: stdin/stdout REPL
+* Building:    make compile
+* Running:     make run
+* Testing:     --
