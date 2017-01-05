@@ -3,6 +3,16 @@ reference code for various tasks. The projects differ by what they do,
 how they are structured, how to build them, how to test and deploy them,
 which libraries and frameworks are used and so forth.
 
+Project:       buttons
+* Structure:   graphical application
+* Classes:     1
+* Complexity:  1 constructor, 2 methods, 1 main method
+* SLOC:        28 lines
+* Interaction: graphical
+* Building:    javac
+* Running:     java
+* Testing:     --
+
 Project:       maths
 * Structure:   library + test application
 * Classes:     1
@@ -13,7 +23,8 @@ Project:       maths
 * Running:     ant run
 * Testing:     --
 
-Project:       containers [adapted from https://github.com/Kvayn/PodilizerExampleProject]
+Project:       containers [adapted from
+               https://github.com/Kvayn/PodilizerExampleProject]
 * Structure:   application
 * Classes:     3
 * SLOC:        82 lines
@@ -36,7 +47,7 @@ Project:       transport
 * Testing:     junit
 
 Project:       imageprocessor
-* Structure:   applications + plugins
+* Structure:   application + plugins
 * Classes:     6
 * SLOC:        253 lines
 * Complexity:  1 interface, 2 constructors, 7 methods, 3*3 methods in
