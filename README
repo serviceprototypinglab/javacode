@@ -13,6 +13,17 @@ Project:       maths
 * Running:     ant run
 * Testing:     --
 
+Project:       containers [adapted from https://github.com/Kvayn/PodilizerExampleProject]
+* Structure:   application
+* Classes:     3
+* SLOC:        82 lines
+* Complexity:  2 constructors, 4 methods, 8 getters/setters, 1 main
+               method
+* Interaction: stdout
+* Building:    mvn compile
+* Running:     mvn exec:java
+* Testing:     --
+
 Project:       transport
 * Structure:   application
 * Classes:     3
