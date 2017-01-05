@@ -56,3 +56,15 @@ Project:       imageprocessor
 * Building:    make compile
 * Running:     make run
 * Testing:     --
+
+Project:       parser [adapted from
+               https://dexvis.wordpress.com/2012/11/22/a-tale-of-two-grammars/]
+* Structure:   application with code generation
+* Classes:     6
+* SLOC:        771 lines
+* Complexity:  1 interface, 2 constructors, 22 methods, 24 virtual
+               methods, 13  getters, 1 main method, 1 nested class
+* Interaction: stdout, file input
+* Building:    make regenerate compile
+* Running:     make run
+* Testing:     --
