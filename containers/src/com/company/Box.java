@@ -1,13 +1,12 @@
 package com.company;
 
-
 public class Box {
     private int h;
     private int w;
     private int l;
     private String overview;
 
-    public Box(){
+    public Box() {
         this.h = 0;
         this.w = 0;
         this.l = 0;
@@ -21,15 +20,16 @@ public class Box {
         this.overview = "This is " + h + "x" + w +"x" + l + " box.";
     }
 
-    int volume(){
+    int volume() {
         int volume = h*w*l;
         overview = overview + " P.S.: Someone already counted the volume.";
         System.out.println(volume);
         return volume;
     }
-    void oneLineMethod(){
-	System.out.println("line");	
-	}
+
+    void oneLineMethod() {
+        System.out.println("line");
+    }
 
     public int getH() {
         return h;

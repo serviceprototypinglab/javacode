@@ -5,8 +5,7 @@ import java.util.ArrayList;
 public class BoxContainer {
     private ArrayList<Box> boxes = new ArrayList<>();
 
-
-    public int totalVolume(){
+    public int totalVolume() {
         int result = 0;
         for (Box box :
                 boxes) {
@@ -15,8 +14,8 @@ public class BoxContainer {
         }
         return result;
     }
-    public void addBox(Box box){
+
+    public void addBox(Box box) {
         boxes.add(box);
     }
-
 }
