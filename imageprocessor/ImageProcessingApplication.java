@@ -151,7 +151,16 @@ public class ImageProcessingApplication
 		System.out.println("2 process");
 		System.out.println("3 quit");
 		Scanner scanner = new Scanner(System.in);
-		String choice = scanner.next();
+		String choice = null;
+		try
+		{
+			choice = scanner.next();
+		}
+		catch(java.util.NoSuchElementException e)
+		{
+			System.out.println("Input data ended, forced quit.");
+			System.exit(0);
+		}
 		if(choice.equals("0"))
 		{
 			System.out.println("Image: " + this.currentimage);

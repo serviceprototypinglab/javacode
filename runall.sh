@@ -5,7 +5,7 @@ time (cd buttons; java Buttons)
 echo == containers ==
 time (cd containers; mvn exec:java)
 echo == imageprocessor ==
-time (cd imageprocessor; make run)
+time (cd imageprocessor; echo 1 | make run)
 echo == maths ==
 time (cd maths; ant run)
 echo == parser ==
