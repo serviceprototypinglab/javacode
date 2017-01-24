@@ -3,6 +3,9 @@ reference code for various tasks. The projects differ by what they do,
 how they are structured, how to build them, how to test and deploy them,
 which libraries and frameworks are used and so forth.
 
+The convenience scripts buildall.sh and runall.sh provide a quick way to
+test all projects.
+
 Project:       buttons
 * Structure:   graphical application
 * Classes:     1
