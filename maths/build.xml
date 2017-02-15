@@ -13,8 +13,13 @@
   </target>
 
   <target name="run" depends="dist">
-    <javac srcdir="." destdir="." includes="*.java" classpath="dist/maths.jar" includeantruntime="false"/>
+    <javac srcdir="." destdir="." includes="Maths.java" classpath="dist/maths.jar" includeantruntime="false"/>
     <java classname="Maths" classpath="dist/maths.jar:."/>
+  </target>
+
+  <target name="test" depends="dist">
+    <javac srcdir="." destdir="." includes="TestMaths.java" classpath="dist/maths.jar:/usr/share/java/testng.jar" includeantruntime="false"/>
+    <java classname="org.testng.TestNG" classpath="dist/maths.jar:/usr/share/java/testng.jar:/usr/share/java/jcommander.jar:." args="TestMaths.xml"/>
   </target>
 
   <target name="clean">
