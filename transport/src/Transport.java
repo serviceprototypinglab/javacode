@@ -18,8 +18,8 @@ class Transport
 
 	private void parse()
 	{
-		String filename = "2016-12-30istdaten.csv";
-		String fileurl = "https://opentransportdata.swiss/dataset/0edc74a3-ad4d-486e-8657-f8f3b34a0979/resource/3724e714-5480-46e2-be49-4892078b71b5/download/2016-12-30istdaten.csv";
+		String filename = "2017-02-14istdaten.csv";
+		String fileurl = "https://opentransportdata.swiss/dataset/0edc74a3-ad4d-486e-8657-f8f3b34a0979/resource/32148695-0680-4a8b-8509-ecaff6b1a73f/download/2017-02-14istdaten.csv";
 
 		System.out.println("Preparing data...");
 
