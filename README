@@ -3,6 +3,9 @@ reference code for various tasks. The projects differ by what they do,
 how they are structured, how to build them, how to test and deploy them,
 which libraries and frameworks are used and so forth.
 
+The additional POM files per project are only required when transforming
+the code to Lambda functions with Podilizer.
+
 The convenience scripts buildall.sh and runall.sh provide a quick way to
 test all projects.
 
