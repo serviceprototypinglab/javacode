@@ -27,7 +27,7 @@ Project:       maths
 * Interaction: none
 * Building:    ant dist
 * Running:     ant run
-* Testing:     --
+* Testing:     ant test
 
 Project:       containers [adapted from
                https://github.com/Kvayn/PodilizerExampleProject]
@@ -50,7 +50,7 @@ Project:       transport
 * Interaction: stdout, HTTP download
 * Building:    make compile
 * Running:     make run
-* Testing:     junit
+* Testing:     junit (make test)
 
 Project:       imageprocessor
 * Structure:   application + plugins
